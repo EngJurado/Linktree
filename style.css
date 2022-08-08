@@ -1,0 +1,10 @@
+body {
+  background-color: #1b1b1b;
+}
+.card {
+  background-color: #424242;
+}
+h1, p {
+  color: white;
+  font-weight: bold;
+}
