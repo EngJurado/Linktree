@@ -1,57 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Mateo</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mateo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body class="text-white text-center bg-dark mt-2">
 
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-        <article class="text-center card m-2">
-            <div class="container">
-                <div class="row">
-                    <section class="col-12 col-md-5 p-2">
-                        <img class="w-100 rounded-circle" src="img/ProfilePicture.jpg" alt="Mateo"> 
-                    </section>
-                    <section class="col-12 col-md-7 p-2">
-                        <h1>Mateo</h1>
-                        <p>Professional in Bioengineering with knowledge of software development,
-                             Linux, circuit analysis, PCB design, biomaterials, ISO standards, medical regulation and office tools.</p>
-                        <div class="container text-center">
-                        <div class="container text-center">
-                            <div class="row justify-content-center">
-                                <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/description/UK.png" alt="English"></div>
-                                <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/description/Spain.png" alt="Spanish"></div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/GitHub.png" alt="GitHub"></div>
-                            <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Arduino.png" alt="Arduino"></div>
-                            <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/C.png" alt="C"></div>
-                            <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Cypress.png" alt="Cypress"></div>
-                            <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Java.png" alt="Java"></div>
-                            <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Eclipse.png" alt="Eclipse"></div>
-                            <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Python.png" alt="Python"></div>
-                            <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Anaconda.png" alt="Anaconda"></div>
-                            <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/HTML5.png" alt="HTML5"></div>
-                            <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/CSS3.png" alt="CSS3"></div>
-                            <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Bootstrap.png" alt="Bootstrap"></div>
-                            <div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/VSCode.png" alt="VSCode"></div>
-                        </div>
-                        </div>
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <a href="https://twitter.com/BioingMateo" class="col-4 col-md-2 p-2"><img class="w-100 rounded" src="img/social/Twitter.png" alt="Twitter"></a>
-                                <a href="https://www.linkedin.com/in/carlos-mateo-jurado-d%C3%ADaz-9a9b14208/" class="col-4 col-md-2 p-2"><img class="w-100 rounded" src="img/social/LinkedIn.png" alt="LinkedIn"></a>
-                                <a href="https://github.com/EngineerMateo" class="col-4 col-md-2 p-2"><img class="w-100 rounded" src="img/social/GitHub.png" alt="GitHub"></a>
-                                <a href="https://t.me/BioingMateo" class="col-4 col-md-2 p-2"><img class="w-100 rounded" src="img/social/Telegram.png" alt="Telegram"></a>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </article>
-	</body>
+  <!-- Nav pills -->
+  <ul class="nav nav-tabs justify-content-center border-dark">
+    <li class="nav-item">
+      <a class="nav-link active bg-dark text-white border-2" data-bs-toggle="tab" href="#home"><h2 class="fw-bold">Home</h2></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link bg-dark text-white border-2" data-bs-toggle="tab" href="#projects"><h2 class="fw-bold">Projects</h2></a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+    <!-- Home -->
+    <div class="tab-pane container active" id="home">
+      <div class="row m-2">
+
+        <!--Photo-->
+				<section class="col-12 col-md-5">
+					<img class="w-100 rounded-circle" src="img/ProfilePicture.jpg" alt="Mateo"> 
+				</section>
+
+        <!--Description-->
+				<section class="col-12 col-md-7">
+					<h1 class="fw-bold">Mateo</h1>
+					<p class="fw-bold">Professional in Bioengineering with knowledge of software development,
+						Linux, circuit analysis, PCB design, biomaterials, ISO standards, medical regulation and office tools.
+					</p>
+					<div class="container text-center">
+						<div class="container text-center">
+							<div class="row justify-content-center">
+								<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/description/UK.png" alt="English"></div>
+								<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/description/Spain.png" alt="Spanish"></div>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/GitHub.png" alt="GitHub"></div>
+							<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Arduino.png" alt="Arduino"></div>
+							<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/C.png" alt="C"></div>
+							<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Cypress.png" alt="Cypress"></div>
+							<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Java.png" alt="Java"></div>
+							<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Eclipse.png" alt="Eclipse"></div>
+							<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Python.png" alt="Python"></div>
+							<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Anaconda.png" alt="Anaconda"></div>
+							<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/HTML5.png" alt="HTML5"></div>
+							<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/CSS3.png" alt="CSS3"></div>
+							<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/Bootstrap.png" alt="Bootstrap"></div>
+							<div class="col-2 col-md-1 p-2"><img class="w-100" src="img/code/VSCode.png" alt="VSCode"></div>
+						</div>
+					</div>
+
+          <!--Social-->
+					<div class="container">
+						<div class="row justify-content-center">
+							<a href="https://twitter.com/BioingMateo" class="col-4 col-md-2 p-2"><img class="w-100 rounded" src="img/social/Twitter.png" alt="Twitter"></a>
+							<a href="https://www.linkedin.com/in/carlos-mateo-jurado-d%C3%ADaz-9a9b14208/" class="col-4 col-md-2 p-2"><img class="w-100 rounded" src="img/social/LinkedIn.png" alt="LinkedIn"></a>
+							<a href="https://github.com/EngineerMateo" class="col-4 col-md-2 p-2"><img class="w-100 rounded" src="img/social/GitHub.png" alt="GitHub"></a>
+							<a href="https://t.me/BioingMateo" class="col-4 col-md-2 p-2"><img class="w-100 rounded" src="img/social/Telegram.png" alt="Telegram"></a>
+						</div>
+					</div>
+
+				</section>
+
+			</div>
+    </div>
+
+    <div class="tab-pane container fade" id="projects">...</div>
+  </div>
+</body>
 </html>
