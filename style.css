@@ -1,11 +1,9 @@
 body{
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(0, 0, 0);
 }
 
 .my-card{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(50, 50, 50);
     opacity: 0.80;
     border-radius:2em;
 }
