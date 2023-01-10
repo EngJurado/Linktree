@@ -1,0 +1,16 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.my-card {
+    background-color: rgb(50, 50, 50);
+    opacity: 0.95;
+    border-radius: 2em;
+}
+
+.DNAxCAT {
+    color: rgb(150, 150, 150);
+}
