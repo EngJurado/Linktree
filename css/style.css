@@ -11,6 +11,9 @@ body {
     border-radius: 2em;
 }
 
-.DNAxCAT {
-    color: rgb(150, 150, 150);
-}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
