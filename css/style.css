@@ -5,8 +5,18 @@ body {
     background-position: center;
 }
 
-.my-card {
-    background-color: rgb(50, 50, 50);
-    opacity: 0.9;
+.card {
     border-radius: 2em;
+    opacity: 90%;
+}
+
+.grow img{
+    transition: 0.5s ease;
+}
+    
+.grow img:hover{
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: 0.5s ease;
 }
