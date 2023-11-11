@@ -1,5 +1,6 @@
 .card {
-    border-radius: 2em;
+    background-color: #2b3035 !important;
+    border-color: #2b3035 !important;
 }
 
 .grow img{
