@@ -1,0 +1,19 @@
+body{
+    background-image: url("background.webp");
+    background-position: center;
+    background-size: cover;
+    background-position: top;
+}
+.card {
+    opacity: 0.9;
+}
+i { 
+    transition: all .2s ease-in-out; 
+    font-size:x-large;
+    color: white;
+}
+    
+i:hover { 
+    font-size: xx-large;
+    color: white;
+}
