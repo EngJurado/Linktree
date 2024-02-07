@@ -1,0 +1,13 @@
+body{
+    background-image: url("../img/background.webp");
+    background-position: center;
+    background-size: cover;
+    background-position: top;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+h1{
+    font-weight: bold;
+}
