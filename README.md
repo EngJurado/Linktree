@@ -51,7 +51,14 @@ If you have any feedback, please reach out to me at eng.jurado@gmail.com
 
 ## Screenshots
 
+<p align="center">Desktop</p>
+
 ![Desktop](Screenshots/Desktop.png?raw=true "Desktop")
-![Mobile](Screenshots/Mobile.jpg?raw=true "Mobile")
+
+<p align="center">Mobile</p>
+
+<p align="center">
+    <img src="Screenshots/Mobile.jpg"> 
+</p>
 
 
