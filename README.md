@@ -64,7 +64,7 @@ We welcome contributions! For major changes, please open an issue first to discu
 
 ## Authors
 
-- **Carlos Jurado**
+- [Carlos Jurado](https://github.com/EngJurado)
 
 ## Acknowledgments
 
