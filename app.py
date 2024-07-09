@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     name = 'Carlos Jurado'
     tags = 'Bioengineering | Brain modulation | Artificial Intelligence'
-    description = "Bioengineer with a passion for neuromodulation, machine learning, and data analysis. Currently pursuing a Master's degree in Artificial Intelligence. Experienced in providing clinical support for neuromodulation surgeries and programming neurostimulators. Skilled in patient education, surgical support, medical devices, and leadership."
+    description = "I am a dedicated professional with a comprehensive background in bioengineering and artificial intelligence. Currently, I serve as a Clinical Specialist at Medtronic, where I utilize my expertise to address complex challenges in high-stress environments. My career journey has been enriched by various roles, including those of Laboratory Assistant and Research Student at the University of Antioquia."
     links = [
         {
             'name': 'GitHub',
