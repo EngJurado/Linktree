@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block meta %}
+    <title>{{ name }}</title>
+    <meta name="description" content="{{tags}}">
+    <link href="{{ url_for('static', filename = 'css/index.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}     
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-4">
+            <div class="card text-bg-dark text-center m-2 p-2">
+                <div class="row justify-content-center">
+                    <h1 class="card-title">{{ name }}</h1>
+                    <div class="col-10 col-lg-8">
+                        <div>
+                            <img src="{{ url_for('static', filename = 'img/profile.webp') }}" class="w-100 rounded-circle" alt="{{ name }}">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            {{ tags }}
+                        </p>
+                        <p>
+                            {{ description }}
+                        </p>
+                        <p> 
+                            {% for link in links %}
+                                <a href="{{ link.url }}" aria-label="{{ link.name }}"><i class="fa-brands {{ link.icon }} fa-2xl p-1"></i> </a>
+                            {% endfor %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    
