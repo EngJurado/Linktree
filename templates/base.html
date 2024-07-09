@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename = 'fontawesome/css/all.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">
+    {% block meta %}{% endblock %}
+    <link rel="icon" type="/image/png" href="{{ url_for('static', filename = 'img/favicon.webp') }}">
+    <link href="{{ url_for('static', filename = 'css/base.css') }}" rel="stylesheet"> 
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>

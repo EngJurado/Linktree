@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block meta %}
+    <title>{{ name }}</title>
+    <meta name="description" content="{{description}}">
+    <link href="{{ url_for('static', filename = 'css/404.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="d-flex vh-100 align-items-center justify-content-center"	> 
+        <div class="row text-center">
+            <div class="col-12">
+                <div class="card text-bg-dark m-2 p-2">
+                    <div class="row justify-content-center"><a href="{{ url_for('index') }}">
+                        <h1 class="card-title d-none d-lg-block">{{ name }} | {{ description }} </h1>
+                        <h1 class="card-title d-block d-lg-none">{{ name }}</h1>
+                        <h2 class="card-body d-block d-lg-none">{{ description }}</h2>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+    </div> 
+{% endblock %}
