@@ -27,7 +27,7 @@ git clone https://github.com/EngJurado/Linktree
 ```
 2. Navigate to the project directory:
 ```
-cd linktree
+cd Linktree
 ```
 3. Install the required packages:
 ```
