@@ -1,15 +1,20 @@
+<!-- The DOCTYPE declaration defines this document to be HTML5 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Sets the language of the document to English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document (UTF-8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <!-- Links to the FontAwesome CSS for icons -->
     <link href="{{ url_for('static', filename = 'fontawesome/css/all.min.css') }}" rel="stylesheet">
+    <!-- Links to the Bootstrap CSS for styling -->
     <link href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">
-    {% block meta %}{% endblock %}
+    {% block meta %}{% endblock %} <!-- Placeholder for pages to insert additional meta tags -->
+    <!-- Link to the favicon of the website -->
     <link rel="icon" type="/image/png" href="{{ url_for('static', filename = 'img/favicon.webp') }}">
+    <!-- Links to the base CSS file for common styles across the website -->
     <link href="{{ url_for('static', filename = 'css/base.css') }}" rel="stylesheet"> 
 </head>
 <body>
-    {% block content %}{% endblock %}
+    {% block content %}{% endblock %} <!-- Placeholder for the main content of each page -->
 </body>
-</html>
+</html>x|

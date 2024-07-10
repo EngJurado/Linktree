@@ -1,21 +1,38 @@
+<!-- Inherits the base layout from base.html, using its structure and blocks -->
 {% extends "base.html" %}
 
+<!-- Defines content for the 'meta' block defined in base.html -->
 {% block meta %}
+    <!-- Sets the page title dynamically based on the 'name' variable -->
     <title>{{ name }}</title>
+    <!-- Sets a meta description tag dynamically based on the 'description' variable -->
     <meta name="description" content="{{description}}">
+    <!-- Links to a CSS file specific to the 404 page for additional styling -->
     <link href="{{ url_for('static', filename = 'css/404.css') }}" rel="stylesheet">
 {% endblock %}
 
+<!-- Defines content for the 'content' block defined in base.html -->
 {% block content %}
-    <div class="d-flex vh-100 align-items-center justify-content-center"	> 
+    <!-- Creates a flex container to center the content vertically and horizontally in the viewport -->
+    <div class="d-flex vh-100 align-items-center justify-content-center"> 
+        <!-- Defines a row with text centered -->
         <div class="row text-center">
+            <!-- Specifies a column that spans the full width -->
             <div class="col-12">
+                <!-- Creates a card with dark background and padding -->
                 <div class="card text-bg-dark m-2 p-2">
-                    <div class="row justify-content-center"><a href="{{ url_for('index') }}">
-                        <h1 class="card-title d-none d-lg-block">{{ name }} | {{ description }} </h1>
-                        <h1 class="card-title d-block d-lg-none">{{ name }}</h1>
-                        <h2 class="card-body d-block d-lg-none">{{ description }}</h2>
-                    </a></div>
+                    <!-- Centers the content within the row -->
+                    <div class="row justify-content-center">
+                        <!-- Creates a link back to the homepage -->
+                        <a href="{{ url_for('index') }}">
+                            <!-- Displays the name and description for large screens only -->
+                            <h1 class="card-title d-none d-lg-block">{{ name }} | {{ description }} </h1>
+                            <!-- Displays only the name for smaller screens -->
+                            <h1 class="card-title d-block d-lg-none">{{ name }}</h1>
+                            <!-- Displays only the description for smaller screens -->
+                            <h2 class="card-body d-block d-lg-none">{{ description }}</h2>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
