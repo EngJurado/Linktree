@@ -15,7 +15,7 @@ def index():
         {'name': 'GitHub', 'url': 'https://github.com/EngJurado', 'icon': 'fa-github'},
         {'name': 'LinkedIn', 'url': 'https://www.linkedin.com/in/engjurado/', 'icon': 'fa-linkedin'},
         {'name': 'Telegram', 'url': 'https://telegram.me/engjurado', 'icon': 'fa-telegram'},
-        {'name': 'Twitter', 'url': 'https://twitter.com/EngJurado', 'icon': 'fa-twitter'}
+        {'name': 'Twitter', 'url': 'https://twitter.com/EngJurado', 'icon': 'fa-x-twitter'}
     ]
     # Render the homepage template with the provided information
     return render_template('index.html', name=name, tags=tags, description=description, links=links)
