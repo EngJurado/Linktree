@@ -16,7 +16,7 @@
     <!-- Creates a centered row for layout -->
     <div class="row justify-content-center">
         <!-- Defines a column for the main content, adjusting its size for larger screens -->
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-6">
             <!-- Creates a card with dark background and centered text -->
             <div class="card text-bg-dark text-center m-2 p-2">
                 <!-- Ensures content within the card is centered -->
@@ -24,7 +24,7 @@
                     <!-- Displays the name variable as the card title -->
                     <h1 class="card-title">{{ name }}</h1>
                     <!-- Defines a column for the profile image, adjusting its size for larger screens -->
-                    <div class="col-10 col-lg-8">
+                    <div class="col-10 col-lg-6">
                         <div>
                             <!-- Displays the profile image, with the source path and alt text dynamically set -->
                             <img src="{{ url_for('static', filename = 'img/profile.webp') }}" class="w-100 rounded-circle" alt="{{ name }}">
