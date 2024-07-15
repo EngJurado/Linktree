@@ -9,7 +9,7 @@ def index():
     # Personal and professional information to be displayed on the homepage
     name = 'Carlos Jurado'
     tags = 'Bioengineering | Brain modulation | Artificial Intelligence'
-    description = "I am a dedicated professional with a comprehensive background in bioengineering and artificial intelligence. Currently, I serve as a Clinical Specialist at Medtronic, where I utilize my expertise to address complex challenges in high-stress environments. My career journey has been enriched by various roles, including those of Laboratory Assistant and Research Student at the University of Antioquia."
+    description = "I am a dedicated professional with a comprehensive background in bioengineering and artificial intelligence. Currently, I serve as External Support at Medtronic, addressing complex challenges in high-stress environments. My career journey includes roles as a Laboratory Assistant and Research Student at the University of Antioquia. I am currently pursuing a Master's degree in Artificial Intelligence, eager to leverage my academic background in bioengineering and passion for AI technologies into a fulfilling career. Committed to continuous learning, I hold multiple certifications in related technologies, demonstrating my readiness to excel in the evolving landscape of AI."
     links = [
         # Social and professional links to be included on the homepage
         {'name': 'GitHub', 'url': 'https://github.com/EngJurado', 'icon': 'fa-github'},
