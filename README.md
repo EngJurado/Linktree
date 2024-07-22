@@ -6,7 +6,6 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-
 This project is a personal social media reference landing page, designed to mimic the functionality of Linktree. It allows users to create a single page with links to their various social media profiles and other important URLs. This version is deployed on PythonAnywhere and utilizes Flask for the backend, Bootstrap for responsive design, and Font Awesome for icons.
 
 ## Getting Started
