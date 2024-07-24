@@ -1,16 +1,16 @@
+.d-flex {
+    height: 100vh;
+}
+
 body{
-    background-image: url("../img/background.webp");
-    background-position: center;
-    background-size: cover;
-    background-position: top;
-    overflow-y: auto;
-    overflow-x: hidden;
+    background-color: #1e1e2e;
 }
 
 h1{
     font-weight: bold;
+    color: #cdd6f4;
 }
 
 .card {
-    opacity: 0.95;
+    background-color: #181825;
 }

@@ -1,10 +1,13 @@
+p, i{
+    color: #cdd6f4;
+}
+
 i { 
     font-size: 2em;
-    color: white;
 }
 
 i:hover {
-    color: rgb(51, 70, 133);
+    color: #6c7086;
 }
 
 a {

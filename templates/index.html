@@ -1,55 +1,31 @@
-<!-- Inherits the base layout from base.html, using its structure and blocks -->
 {% extends "base.html" %}
 
-<!-- Defines content for the 'meta' block defined in base.html -->
 {% block meta %}
-    <!-- Sets the page title dynamically based on the 'name' variable -->
     <title>{{ name }}</title>
-    <!-- Sets a meta description tag dynamically based on the 'tags' variable -->
     <meta name="description" content="{{tags}}">
-    <!-- Links to a CSS file specific to the index page for additional styling -->
     <link href="{{ url_for('static', filename = 'css/index.css') }}" rel="stylesheet">
 {% endblock %}
 
-<!-- Defines content for the 'content' block defined in base.html -->
-{% block content %}     
-    <!-- Creates a centered row for layout -->
+{% block content %}  
     <div class="row justify-content-center">
-        <!-- Defines a column for the main content, adjusting its size for larger screens -->
-        <div class="col-12 col-lg-6">
-            <!-- Creates a card with dark background and centered text -->
-            <div class="card text-bg-dark text-center m-2 p-2">
-                <!-- Ensures content within the card is centered -->
-                <div class="row justify-content-center">
-                    <!-- Displays the name variable as the card title -->
-                    <h1 class="card-title">{{ name }}</h1>
-                    <!-- Defines a column for the profile image, adjusting its size for larger screens -->
-                    <div class="col-10 col-lg-6">
-                        <div>
-                            <!-- Displays the profile image, with the source path and alt text dynamically set -->
-                            <img src="{{ url_for('static', filename = 'img/profile.webp') }}" class="w-100 rounded-circle" alt="{{ name }}">
-                        </div>
-                    </div>
-                    <!-- Contains the main body of the card -->
-                    <div class="card-body">
-                        <!-- Displays the tags variable as text -->
-                        <p class="card-text">
-                            {{ tags }}
-                        </p>
-                        <!-- Displays the description variable as text -->
-                        <p>
-                            {{ description }}
-                        </p>
-                        <!-- Iterates over the links variable to create social media icons -->
-                        <p> 
-                            {% for link in links %}
-                                <!-- Creates a link for each social media icon, setting the href dynamically -->
-                                <a href="{{ link.url }}" aria-label="{{ link.name }}"><i class="fa-brands {{ link.icon }} fa-2xl p-1 mb-4"></i> </a>
-                            {% endfor %}
-                        </p>
-                    </div>
-                </div>
+        <h1>{{ name }}</h1>
+        <div class="col-10 col-lg-8">
+            <div class="p-2">
+                <img src="{{ url_for('static', filename = 'img/profile.webp') }}" class="w-100 rounded-circle" alt="{{ name }}">
             </div>
+        </div>
+        <div>
+            <p>
+                {{ tags }}
+            </p>
+            <p>
+                {{ description }}
+            </p>
+            <p> 
+                {% for link in links %}
+                    <a href="{{ link.url }}" aria-label="{{ link.name }}"><i class="fa-brands {{ link.icon }} fa-2xl p-1 mb-4"></i> </a>
+                {% endfor %}
+            </p>
         </div>
     </div>
 {% endblock %}

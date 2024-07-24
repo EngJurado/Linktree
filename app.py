@@ -1,12 +1,13 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template
 
-# Initialize Flask application
 app = Flask(__name__)
 
-# Define route for the homepage
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('404.html')
+
 @app.route('/')
 def index():
-    # Personal and professional information to be displayed on the homepage
     name = 'Carlos Jurado'
     tags = 'Bioengineering | Brain modulation | Artificial Intelligence'
     description = "Passionate and dedicated professional with a strong foundation in bioengineering and artificial intelligence. Currently pursuing a Master's degree in AI to transition into a specialized AI career. Experienced in high-stress environments with a proven track record in problem-solving, teamwork, and leadership. Committed to continuous learning and development, holding multiple certifications in related technologies."
@@ -17,18 +18,7 @@ def index():
         {'name': 'Telegram', 'url': 'https://telegram.me/engjurado', 'icon': 'fa-telegram'},
         {'name': 'Twitter', 'url': 'https://twitter.com/EngJurado', 'icon': 'fa-x-twitter'}
     ]
-    # Render the homepage template with the provided information
-    return render_template('index.html', name=name, tags=tags, description=description, links=links)
+    return render_template('index.html', name=name, tags=tags, description=description, links=links)  
 
-# Define route for handling 404 errors
-@app.route("/<path:error404>")
-def error404(error404):
-    # Information to be displayed on the 404 error page
-    name = 'Error 404'
-    description = 'This page could not be found'
-    # Render the 404 error template with the provided information
-    return render_template('404.html', name=name, description=description)
-
-# Run the Flask application if this script is executed as the main program
 if __name__ == '__main__':
     app.run()
